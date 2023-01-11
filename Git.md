@@ -46,16 +46,16 @@ GitHub- Git기반의 저장소 서비스 (원격?)
 
 - 새폴더를 만들고 README.md 파일을 생성해 주세요.
 
-- 이 파일을 버전 관리하며 git을 사용해 봅시다
+- 이 파일을 버전 관리하며 git을 사용해 봅시다   :                        git status:깃의 상태 
   
   > 특정 버전으로 남긴다 = "커밋(Commit)한다" 3가지 영역
   > 
-  > working Directory : 내가 작업하고 있는 실제 디렉토리   **↓ git add**
+  > working Directory : 내가 작업하고 있는 실제 디렉토리   **↓ git add**  파일명      w->s
   > 
-  > Staging Area : 커밋(commit)으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳  **↓git commit**
+  > Staging Area : 커밋(commit)으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳  **↓git commit** -m "메세지"                    s->r
   > 
-  > Repository : 커밋(commit)들이 저장되는 곳
+  > Repository : 커밋(commit)들이 저장되는 곳                **git log** 로그보기
 
-
+Q.
 
 
