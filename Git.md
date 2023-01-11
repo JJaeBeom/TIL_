@@ -56,6 +56,6 @@ GitHub- Git기반의 저장소 서비스 (원격?)
   > 
   > Repository : 커밋(commit)들이 저장되는 곳                **git log** 로그보기
 
-Q.
+Q< end 떳을때 나가기
 
 
