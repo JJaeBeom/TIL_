@@ -37,7 +37,7 @@ IBM watson - Legends, minter
    ```python
    menu = ['닭고기온메밀국수', '토마토 리조또', '무파마', '김치찜']
    print(menu)
-   print(menu[0])
+   print(menu[0])python
    ```
    
    ```python
@@ -46,22 +46,20 @@ IBM watson - Legends, minter
    ```
    
    저장-딕셔너리> 이름표를 단 여러 개의 값을 저장할 수 있는 저장공간
-   
-   
-   
+
     무엇을 저장하는가
-   
-      1)숫자                                                     현실세계에 존재하는 모든 숫자
-   
+    
+      1)숫자      현실세계에 존재하는 모든 숫자
+
    기본적인 연산이 가능
-   
-      2)글자                                                   현실세계에 존재하는 모든 글자
-   
+
+      2)글자       현실세계에 존재하는 모든 글자
+
    따옴표로 둘러싼 글자or 숫자.
-   
-      3)참/거짓                                      True, False 단 두가지!  + None
-   
-   조건/반복에 사용됨                              300>200  =>true
+
+      3)참/거짓    True, False 단 두가지!  + None
+
+   조건/반복에 사용됨         300>200  =>true
 
 ##### 변수 활용하기
 
@@ -101,7 +99,7 @@ IBM watson - Legends, minter
 
 3. 반복
 
-       반복- while @ 
+       반복- while @
 
 ```python
 while ㅇㅇ:
@@ -132,15 +130,12 @@ for zzz in numbers:
 # numbers가 가진 각 요소를 출력
     print(zzz)
     ㅔ
-    
 ```
 
 | while 조건:    | for                       |
 | ------------ | ------------------------- |
 | 종료조건이 반드시 필요 | 정해진 범위를 반복하기에 종료조건이 필요 없음 |
 |              |                           |
-
-
 
 ### VScode
 
