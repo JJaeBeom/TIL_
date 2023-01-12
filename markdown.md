@@ -130,3 +130,5 @@ CLI - 커맨드 라인 인터페이스
 ### CLI
 
 > CLI command line interface
+
+![](markdown_assets/2023-01-12-09-09-35-image.png)

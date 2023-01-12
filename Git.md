@@ -10,15 +10,11 @@
 
   과거버전을 관리하기 위해. 치명적인 오류 발생 시
 
-
-
  코드의 **히스토리(버전)** 을 관리하는 도구
 
  개발되어온 **과정** 파악 가능
 
  이전 버전과의 **변경 사항 비교 및 분석**
-
-
 
 GitLab - ssafy할때 쓸거 (프라이빗) 과제 pjt
 
@@ -26,13 +22,9 @@ GitHub - 공개적 (스터디)
 
 Bitbucket - 
 
-
-
 Git- 분산버전관리프로그램
 
 GitHub- Git기반의 저장소 서비스 (원격?)
-
-
 
 ### GIT 기본기
 
@@ -46,7 +38,7 @@ GitHub- Git기반의 저장소 서비스 (원격?)
 
 - 새폴더를 만들고 README.md 파일을 생성해 주세요.
 
-- 이 파일을 버전 관리하며 git을 사용해 봅시다   :                        git status:깃의 상태 
+- 이 파일을 버전 관리하며 git을 사용해 봅시다   :                        **git status**:깃의 상태 
   
   > 특정 버전으로 남긴다 = "커밋(Commit)한다" 3가지 영역
   > 
@@ -54,8 +46,8 @@ GitHub- Git기반의 저장소 서비스 (원격?)
   > 
   > Staging Area : 커밋(commit)으로 남기고 싶은, 특정 버전으로 관리하고 싶은 파일이 있는 곳  **↓git commit** -m "메세지"                    s->r
   > 
-  > Repository : 커밋(commit)들이 저장되는 곳                **git log** 로그보기
+  > Repository : 커밋(commit)들이 저장되는 곳                **git log** 로그보기 
+  > 
+  > (git log --oneline : 로그 한줄로 보기)  git log --oneline --graph(그래프로보기)
 
 Q< end 떳을때 나가기
-
-
