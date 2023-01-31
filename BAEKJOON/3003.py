@@ -1,0 +1,8 @@
+K, Q, L, B, N, P = input().split()
+K1 = 1 - int(K)
+Q1 = 1 - int(Q)
+L1 = 2 - int(L)
+B1 = 2 - int(B)
+N1 = 2 - int(N)
+P1 = 8 - int(P)
+print(K1, Q1, L1, B1, N1, P1)
