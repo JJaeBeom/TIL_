@@ -50,3 +50,8 @@ for i in range(0, len(documents), 2):
 # print(python_class)
 # IndexError: list index out of range 오류가 발생한다. 순회를 설정한 범위는 range(0, 7, 2)이다. 
 # 즉, i는 0, 2, 4, 6을 순회하는데 documents[i+1]이 되면 마지막에 documents[7]이 되면서 리스트 범위를 벗어나게 된다.
+
+a = [0, 1, 2, 3]
+print(a[:3])
+
+print(3 or 5)
