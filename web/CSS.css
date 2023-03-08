@@ -1,0 +1,26 @@
+.box {
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+
+    /* margin-top: 20px; */
+
+    /* margin-right: auto; */
+    /* 마진이 오른쪽으로 자동으로 들어감 */
+    /* margin-left: auto; */
+    /* 마진이 왼쪽으로 자동으로 들어감 우측정렬  */
+    /* margin-right: auto; 
+    margin-left: auto; */
+    /* 가운데 정렬 */
+    margin: 20px auto;
+    /* 가운데 정렬 편하게 십자 모양 */
+    text-align: center;
+
+    /* 기본적으론 디스플레이 블록일텐데 */
+    /* 디스플레이 인라인 해버리면 범위 좁아짐 */
+    /* display: inline; */
+}
+
+span {
+    line-height: 100px;
+}
