@@ -1,0 +1,41 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    
+    /* 동그랗게 만듬 */
+    border-radius: 50%;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+background-color: red;
+}
+.blue{
+background-color: blue;
+}
+.green{
+background-color: green;
+}
+
+.sm{
+    width: 50px;
+    height: 50px;
+}
+
+.lg{
+    width: 150px;
+    height: 150px;
+}
+
+@font-face {
+    font-family: "짱이쁜 폰트";
+    src: url();
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
