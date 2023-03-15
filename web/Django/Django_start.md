@@ -156,3 +156,7 @@ def index(request):
 
 - Django에서의 코드 작성은 URL -> View -> Template순으로 작성
 - "데이터의 흐름 순서"
+
+
+프로젝트 위치 옮기는건 가능.
+프로젝트 이름 바꾸는건 불가능.
