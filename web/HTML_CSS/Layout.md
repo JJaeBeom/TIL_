@@ -72,5 +72,38 @@
   - flex-direction
   - flex-wrap
 - 공간 나누기
-  - justify-content()
-  - 
+  - justify-content(main axis)
+  - align-self(cross axis)
+
+- 정렬
+  - align-items(모든 아이템을 cross axis 기준으로)
+  - aling-self(개별 아이템)
+
+> Flex 속성: flex-direction
+- Main axis 기준 방향 설정
+1) row  - 가로
+2) row-reverse - 가로 (오른쪽에서 부터)
+3) column - 세로
+4) column-reverse - 세로(밑에서부터 위로)
+
+> Flex 속성: flex-wrap
+- 아이템이 컨테이너를 벗어나는 경우 해당 영역 내에 배치되도록 설정
+- 즉, 기본적으로 컨테이너 영역을 벗어나지 않도록 함
+1) wrap - 줄넘김(넘치면 그 다음 줄로 배치)
+2) nowrap - 쫙(한줄에 배치)
+
+> flex-flow 
+- flex-direction과 flex-wrap의 shorthand
+- ex) flex-flow : row nowrap;
+
+> Flex 속성: justify-content & align-content
+- 공간 배분
+ - flex-start
+ - flex-end: 아이템들을 끝 쪽으로
+ - center: 중앙으로
+ - space-between: 아이템 사이의 간격을 균일하게 분배
+ - space-around: 아이템을 둘러싼 영역을 균일하게 분배(가질 수 있는 영역을 반으로 나눠서 양쪽에)
+
+> Flex 기타 속성
+- order: 배치순서
+- flex-grow: 남은 영역을 아이템에 분배
