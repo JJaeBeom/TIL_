@@ -61,22 +61,22 @@
     
       # 우, 하만 설정
 dxy = [(0,1),(1,0)]
-def dfs(x, y, s):
+def dfs(x, y, start):
     global result
 
-    if s >= result:  # 가지치기
+    if start >= result:  # 가지치기
         return
 
     if x == N-1 and y == N-1:  # 도착지에 도착한 경우
-        if s < result:
-            result = s
+        if start < result:
+            result = start
         return
 
     for dx, dy in dxy:
         nx, ny = x + dx, y + dy
 
         if nx > -1 and nx < N and ny > -1 and ny < N:
-            dfs(nx, ny, s+ Arr[nx][ny])
+            dfs(nx, ny, start+ Arr[nx][ny])
 
 T = int(input())
 for tc in range(1, T+1):
