@@ -57,7 +57,7 @@ if right[-1] < left[-1]:    # 왼쪽 마지막 원소가 오른쪽 마지막 원
     answer += 1
 
 # 인덱스로만 접근
-len_l = len(left)
+len_l = len(left)ㄴ
 len_r = len(right)
 result = [0 for _ in range(len_l+len_r)]
 l = r = i = 0
@@ -91,18 +91,19 @@ def quick_sort(left, right):
         return
 
     pivot = left
-    i = left+1
-    j = right-1
+    i = left+1 #피봇보다 큰 값을 찾아 오른쪽으로 이동
+    j = right-1 #피봇보다 작은 값을 찾아 왼쪽으로 이동
     while i <= j:
-        while i <= j and a[pivot] >= a[i]:
-            i += 1
-        while i <= j and a[pivot] <= a[j]:
-            j -= 1
+        while i <= j and A[pivot] >= A[i]: 
+            # 교차되서 멈추고  피봇보다 큰 애 만나서 멈춤
+            i += 1 #피봇보다 큰애 만나서 오른쪽으로 감
+        while i <= j and A[pivot] <= A[j]:
+            # 교차되서 멈추고 피봇보다 작은애 만나면 멈춤
+            j -= 1 #작은애 만나면 왼쪽으로
 
-        if i <= j:
-            a[i], a[j] = a[j], a[i]
-
-    a[pivot], a[j] = a[j], a[pivot]
+        if i <= j: #교차하지 않은 경우
+            A[i], A[j] = A[j], A[i]
+    A[pivot], A[j] = A[j], A[pivot]
 
     quick_sort(left, j)
     quick_sort(j+1, right)
@@ -111,10 +112,10 @@ def quick_sort(left, right):
 T = int(input())
 for tc in range(1, T + 1):
     N = int(input())
-    a = list(map(int, input().split()))
+    A = list(map(int, input().split()))
 
-    quick_sort(0, len(a))
-    print(f'#{tc} {a[N//2]}')
+    quick_sort(0, len(A))
+    print(f'#{tc} {A[N//2]}')
 
 
 
@@ -132,7 +133,7 @@ for tc in range(1, T+1):
         min_idx = 0
         max_idx = N - 1
         # 왼쪽으로 갔는지 오른쪽으로 갔는지 체크하기 위한 용도
-        flag = 0
+        flag = ''
         # 탐색범위가 같아지거나 엇갈릴때까지 반복한다.
         while min_idx <= max_idx:
             # 중간지점의 위치를 구한다.
@@ -146,14 +147,16 @@ for tc in range(1, T+1):
                 # 선택한 인덱스 위쪽은 필요없으므로 최대 인덱스 위치를 수정한다.
                 max_idx = avg_idx - 1
                 # 이전에도 왼쪽을 선택했다면 중지
-                if flag == 1: break
+                if flag == 'left': 
+                    break
                 # 왼쪽으로 갔다고 표시한다.
-                flag = 1
+                flag = 'left'
             else:
                 # 반대의 상황이라면 최소값을 바꿔준다.
                 min_idx = avg_idx + 1
                 # 이전에 오른쪽으로 갔다면 중지
-                if flag == -1: break
+                if flag == 'right': 
+                    break
                 # 오른쪽으로 갔다고 표시한다.
-                flag = -1
+                flag = 'right'
     print(f'#{tc} {answer}')
