@@ -119,3 +119,29 @@ for tc in range(1, T+1):
     
     ans = len(sset)
     print(f'#{tc} {ans}')
+
+
+#####
+def back(n, sm):
+    global ans
+
+    if sm > K:
+        return
+
+    if n == N:
+        if sm == K:
+            ans += 1
+        return
+    
+    back(n+1, sm+lst[n])
+    back(n+1, sm)
+
+
+T = int(input())
+for tc in range(1, T+1):
+    N, K = map(int(input().split()))
+    lst = list(map(int, input().split()))
+
+    ans = 0
+    back(0, 0)
+    print(ans)
