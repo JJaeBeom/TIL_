@@ -132,12 +132,7 @@ Add 'rest_framework' to your INSTALLED_APPS setting.
 
 - DRF의 
 
-
-
-
-
 **[사용자 단축키 만들기]**
-
 
 preferences
 ㄴconfigure User snippets
@@ -149,10 +144,6 @@ chrome -> snippet generator
 ㄴtab trigger:단축키(파일이름이랑 똑같이(안헷갈리게)
 ㄴcopy snippet -> global_snippets에 붙여넣기
 
-
-
-
-
 **[테스트용 가짜데이터 삽입]**
 
 $ pip install django-seed
@@ -162,10 +153,6 @@ setting.py에 app 추가
 $ pip install psycopg2
 
 $ python manage.py seed music --number=20
-
-
-
-
 
     #QuerySet 으로 리턴되는 경우
 
@@ -177,11 +164,7 @@ $ python manage.py seed music --number=20
 
 serializer = MusicSerializer(all_music, many=True) 처럼 many=True 설정
 
-
-
     #일반 객체로 리턴되는 경우 .get() (many 설정 필요 없음)
-
-
 
 .accepted_renderer  에러 <<  @api_view 달아주기
 
