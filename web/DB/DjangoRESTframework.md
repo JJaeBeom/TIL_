@@ -172,6 +172,6 @@ comment = get_object_or_404(Comment, pk=comment_pk)
 
 ## Serializer 활용하기
 
-to_representation()
+to_representation() 
 
 ## 문서화
