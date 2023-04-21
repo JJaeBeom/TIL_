@@ -9,8 +9,10 @@
 - 게시글 데이터 생성하기
   
   created는 post다
-  POST는 생성.
-  받은 데이터를 유효성검사하고 저장하고 Response로 JSON형태로 반환해주면 끝. JSON데이터, status정보를 넣어준다. 
+  POST는 생성!
+  받은 데이터를 유효성검사하고 저장하고 Response로 JSON형태로 반환해주면 끝. 
+  
+  JSON데이터, status정보를 넣어준다. 
   기억이 안나면 모델 폼을 serializer로 바꾸는걸 생각해보자
   
                                                                   사용자입력
@@ -23,6 +25,8 @@
       return Response(<u>serializer.data</u>, status=status.HTTP_201_CREATED)
   
                                       저장된 데이터                                생성은 201
+
+> ###### DETAIL
 
 Detail.
 pk가 주소에 포함. variable routing
@@ -46,7 +50,7 @@ return Response({'pk':article_pk}, status=status.HTTP_204_NO_CONTENT)
 
 <u>생성은 201, 삭제는 204</u>
 
-UPDATE
+> ###### UPDATE
 
 CREATE와 UPDATE는 한끗차이.
 CREATE에서는 그냥 데이터를 받아왔었다면, UPDATE에서는 기존 정보를 추가하는것,
