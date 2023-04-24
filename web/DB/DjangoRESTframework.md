@@ -179,3 +179,19 @@ comment = get_object_or_404(Comment, pk=comment_pk)
 to_representation() 
 
 ## 문서화
+
+
+@api_view(['GET'])
+def A_list(request):
+    as = A.object.all()
+    serializer = AlistSerializer(as, many=True)
+    return Respone(serializer.data)
+
+
+
+@api_view(['GET'])
+def A(request, A_pk):
+    a = get_object_or_404(A, pk=a_pk)
+    serializer = ASerializer(a)
+    return Respone(serializer.data)
+
